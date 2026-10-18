@@ -90,3 +90,19 @@ The 5,880-year wheel divides perfectly into 7 distinct eras of 840 years each, m
 - **Epoch 3:** 2287 B.C.E. – 1447 B.C.E. (The Patriarchs & The Exodus)
 - **Epoch 2:** 3127 B.C.E. – 2287 B.C.E. (The Flood & The New World)
 - **Epoch 1:** 3967 B.C.E. – 3127 B.C.E. (The Fall & The Early World)
+- ---
+
+## Daniel's 70 Weeks (The Prophetic Covenant Block)
+
+The architecture contains two symmetrical 490-year (10 Jubilee) covenant blocks. The first is historical (420 years of the Temple + 70 years of exile). The second is prophetic, anchored in Daniel 9:24-27.
+
+### The Breakdown
+- **Start (455 B.C.E.):** The issuance of the decree in the 20th year of Artaxerxes to restore and rebuild Jerusalem (Nehemiah 2:1-8).
+- **69 Weeks / 483 Years (29 C.E.):** 455 B.C.E. + 483 years = 29 C.E. (accounting for no year zero), marking the baptism and anointing of the Messiah.
+- **Middle of the 70th Week (33 C.E.):** 3.5 years later brings us to 33 C.E., when the Messiah is "cut off" on the *stauros* (upright stake).
+- **End of the 70th Week (36 C.E.):** 3.5 years after 33 C.E. lands on 36 C.E. (the conversion of Cornelius), concluding the 490-year allocation and opening the covenant to the Gentiles.
+
+### The 12:1 Fractal
+The grand 5,880-year wheel is constructed from exactly twelve 490-year blocks (12 × 490 = 5,880). 
+- **Macro Scale:** 5,880 years divided by 12 = 490 years per cosmic month.
+- **Micro Scale:** Each 490-year block contains exactly 5,880 months (490 × 12).
