@@ -106,3 +106,34 @@ The architecture contains two symmetrical 490-year (10 Jubilee) covenant blocks.
 The grand 5,880-year wheel is constructed from exactly twelve 490-year blocks (12 × 490 = 5,880). 
 - **Macro Scale:** 5,880 years divided by 12 = 490 years per cosmic month.
 - **Micro Scale:** Each 490-year block contains exactly 5,880 months (490 × 12).
+---
+
+## The Davidic 70-Year and 490-Year Mirrors
+
+The life of David and the construction of Solomon's Temple serve as exact mathematical anchors within the Sabbath and Jubilee cycles.
+
+### 1. The 70-Year Anchor (1097 B.C.E. – 1027 B.C.E.)
+David's initial anointing by Samuel initiates a 70-year cycle that culminates in the completion of Solomon's Temple:
+- **1097 B.C.E.:** Samuel anoints 10-year-old David in Bethlehem.
+- **1077 B.C.E. (20 years later):** David begins his reign over Israel at age 30 (2 Samuel 5:4).
+- **1070 B.C.E. (7 years later):** David captures Zion and establishes Jerusalem as the royal capital at age 37.
+- **1037 B.C.E. (33 years later):** David’s 40-year reign ends at age 70; Solomon takes the throne (60 years after David's anointing).
+- **1034 B.C.E. (3 years later):** Solomon lays the foundation of the Temple in his 4th regnal year.
+- **1027 B.C.E. (7 years later):** Solomon completes the Temple, marking the exact 2,940-year midpoint of the 5,880-year wheel.
+- **The Math:** 1097 B.C.E. − 1027 B.C.E. = **70 years**.
+
+### 2. The 490-Year Anointing Block (1097 B.C.E. – 607 B.C.E.)
+Measuring from David's anointing directly to the destruction of Jerusalem creates a full 10-Jubilee covenant unit:
+- 1097 B.C.E. − 607 B.C.E. = **490 years** (70 Sabbatical years / 10 Jubilees).
+This span ties the youth tending sheep in Bethlehem directly to the final desolation of the monarchy and Temple in 607 B.C.E.
+
+### 3. The 490-Year Royal Throne Arc (1070 B.C.E. – 580 B.C.E.)
+When David established Jerusalem as the royal seat in 1070 B.C.E., it set off a parallel 490-year royal arc:
+- 1070 B.C.E. − 580 B.C.E. = **490 years** (70 Sabbatical years).
+This runs from the founding of royal Jerusalem down through its 607 B.C.E. fall to the end of the initial desolation era.
+
+### 4. The 420 + 70 Sabbath Reconciliation
+David's dynasty and Solomon's Temple reconcile the Sabbath law through a complementary division:
+- **Temple Lifespan (1027 B.C.E. – 607 B.C.E.):** Solomon's Temple stood for **420 years**, during which Israel accrued 60 Sabbatical years.
+- **Babylonian Exile (607 B.C.E. – 537 B.C.E.):** The **70-year land desolation** paid back the remaining 10 Sabbatical years.
+- **Total Balance:** 420 years + 70 years = **490 years**, completing the full 70-Sabbath requirement required by the Law.
