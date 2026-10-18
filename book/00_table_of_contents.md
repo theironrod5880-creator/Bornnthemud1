@@ -4,7 +4,7 @@
 ## Table of Contents
 
 **Part I: The Cell and the Name**
-- Chapter 1: Block A, Cell 3
+- Chapter 1: The Ultimatum in the Dark
 - Chapter 2: The Name Jehovah
 - Chapter 3: The Moon Reverses
 
