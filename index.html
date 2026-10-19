@@ -5,17 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Born In The Mud</title>
 <style>
-  :root { --gold:#c9a227; --teal:#0f3b3b; --ink:#0b0e11; --paper:#e8e2d5; }
+  :root { 
+    --gold:#c9a227; 
+    --gold-dim:#8a6a2f; 
+    --teal:#2e6f6a; 
+    --ink:#0b0e11; 
+    --paper:#e8e2d5; 
+  }
   * { box-sizing:border-box; margin:0; padding:0; }
-  body { background:var(--ink); color:var(--paper);
-         font-family:Georgia,'Times New Roman',serif; line-height:1.6; }
+  
+  body { 
+    background: radial-gradient(1200px 700px at 50% -10%, #16202e 0%, var(--ink) 60%);
+    color: var(--paper);
+    font-family: Georgia, 'Times New Roman', serif; 
+    line-height: 1.6; 
+  }
   
   /* --- HEADER --- */
-  header { text-align:center; padding:3rem 1.5rem 1rem;
-           background:radial-gradient(ellipse at 50% 0%, #1c2b2b 0%, #0b0e11 70%); }
-  header h1 { color:var(--gold); font-size:2.6rem; letter-spacing:.12em;
-              text-transform:uppercase; }
-  header p.tag { color:#9fb3b3; font-style:italic; margin-top:.8rem; }
+  header { text-align:center; padding:3rem 1.5rem 1rem; }
+  header h1 { color:var(--gold); font-size:2.6rem; letter-spacing:.12em; text-transform:uppercase; }
+  header p.tag { color:#9fb3a8; font-style:italic; margin-top:.8rem; }
   header p.theme { color:var(--gold); margin-top:1.4rem; font-size:1.1rem; }
 
   /* --- VISUAL GRAMMAR HERO SECTION --- */
@@ -72,13 +81,11 @@
     animation: fadeIn 0.5s forwards;
   }
   
-  /* Date Captions */
   .date-3967 { top: 2px; left: 0; animation-delay: 1.6s; }
   .date-1027 { top: 122px; left: 48%; transform: translateX(-50%); animation-delay: 2.4s; }
   .date-607  { top: 122px; right: 0; animation-delay: 2.6s; }
   .date-1914 { top: 242px; right: 0; animation-delay: 2.8s; }
 
-  /* Picture Squares */
   .picture-square {
     position: absolute;
     width: 60px;
@@ -93,25 +100,18 @@
     justify-content: center;
     align-items: center;
     font-size: 0.6rem;
-    color: #9fb3b3;
+    color: #9fb3a3;
     text-align: center;
   }
 
-  /* Place squares along the timeline */
   .sq1 { top: 110px; left: 10%; animation-delay: 3s; }
   .sq2 { top: 110px; left: 30%; animation-delay: 3.5s; }
   .sq3 { top: 110px; left: 70%; animation-delay: 4s; }
   .sq4 { top: 110px; left: 90%; animation-delay: 4.5s; }
 
-  @keyframes drawLine {
-    to { width: 100%; }
-  }
-  @keyframes fadeIn {
-    to { opacity: 1; }
-  }
-  @keyframes dropSquare {
-    to { opacity: 1; transform: scale(1); }
-  }
+  @keyframes drawLine { to { width: 100%; } }
+  @keyframes fadeIn { to { opacity: 1; } }
+  @keyframes dropSquare { to { opacity: 1; transform: scale(1); } }
 
   /* --- DASHBOARD CONTENT --- */
   main { max-width:900px; margin:0 auto; padding:2rem 1.5rem 4rem; }
@@ -126,9 +126,46 @@
   ul.links a:hover { color:var(--gold); border-bottom-color:var(--gold); }
   .credit { text-align:center; color:#7a7466; font-size:.9rem;
             margin-top:3rem; padding-top:1.5rem; border-top:1px solid #2a3434; }
+
+  /* --- WHEELS INTERACTIVE SECTION --- */
+  .wheels-container {
+    background: rgba(212,162,78,.05);
+    border: 1px solid var(--gold-dim);
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-top: -20px;
+  }
+  .wheels-header { text-align:center; margin-bottom:10px; }
+  .wheels-header h2 { color:var(--gold); letter-spacing:2px; font-size:1.4rem; font-weight:normal; }
+  .wheels-header p { color:#9fb3a8; font-style:italic; font-size:0.9rem; }
+  
+  #stage { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  svg { width:100%; min-width: 800px; height:auto; display:block; margin: 0 auto; }
+  
+  .wheel { cursor:pointer; }
+  .rim { fill:none; stroke:var(--gold); stroke-width:5; }
+  .rim2 { fill:none; stroke:var(--gold-dim); stroke-width:1.5; }
+  .spoke { stroke:var(--gold); stroke-width:2; opacity:.85; }
+  .hub { fill:var(--ink); stroke:var(--gold); stroke-width:3; }
+  .wlabel { fill:var(--gold); font-size:19px; letter-spacing:2px; text-anchor:middle; font-family:Georgia,serif; }
+  .wcount { fill:#c9b98a; font-size:14px; text-anchor:middle; font-style:italic; }
+  
+  .spin { transform-box:fill-box; transform-origin:center; animation:rot linear infinite; }
+  @keyframes rot { to { transform:rotate(360deg); } }
+  
+  #detail { width: 100%; margin:14px auto 0; border:1px solid var(--gold-dim);
+            border-radius:10px; padding:16px 20px; background:rgba(212,162,78,.06); min-height:120px; }
+  #detail h2 { color:var(--gold); letter-spacing:2px; font-weight:normal; font-size:1.2rem; margin-bottom:4px; }
+  #detail .ref { color:var(--teal); font-style:italic; margin-bottom:8px; filter:brightness(1.6); }
+  #detail p { line-height:1.55; font-size:0.95rem; color:#ded2ae; }
+  #detail .hint { color:#7d8a80; font-style:italic; }
+  .wheels-footer { text-align:center; margin-top:18px; color:var(--gold); letter-spacing:1px; font-size:0.9rem; }
+  .wheels-footer span { color:#9fb3a8; font-style:italic; display:block; margin-top:6px; font-size:.85em; }
+
 </style>
 </head>
 <body>
+
 <header>
   <h1>Born In The Mud</h1>
   <p class="tag">from the man born in the mud</p>
@@ -138,7 +175,6 @@
 <!-- THE SEVEN-LINE VISUAL GRAMMAR -->
 <div class="visual-hero">
   <div class="timeline-container">
-    <!-- The 7 Gold Lines -->
     <div class="gold-line"></div>
     <div class="gold-line"></div>
     <div class="gold-line"></div>
@@ -147,16 +183,13 @@
     <div class="gold-line"></div>
     <div class="gold-line"></div>
 
-    <!-- The Center Tick on the 4th Line -->
     <div class="center-tick"></div>
 
-    <!-- Date Captions -->
     <div class="caption date-3967">3967 B.C.E.</div>
     <div class="caption date-1027">1027 B.C.E.</div>
     <div class="caption date-607">607 B.C.E.</div>
     <div class="caption date-1914">1914 C.E.</div>
 
-    <!-- Picture Squares Landing on the Line -->
     <div class="picture-square sq1">The Fall</div>
     <div class="picture-square sq2">The Flood</div>
     <div class="picture-square sq3">The Temple</div>
@@ -165,6 +198,22 @@
 </div>
 
 <main>
+  
+  <!-- THE INTERACTIVE WHEELS -->
+  <section style="padding: 0; background: transparent; border: none;">
+    <div class="wheels-container">
+      <div class="wheels-header">
+        <h2>THE WHEELS</h2>
+        <p>Jehovah's calendar — five wheels, one pattern. Tap a wheel.</p>
+      </div>
+      <div id="stage">
+        <svg id="wheels" viewBox="0 0 1160 470" role="img" aria-label="Five meshing wheels"></svg>
+      </div>
+      <div id="detail"><p class="hint">Tap any wheel to read what it counts.</p></div>
+      <div class="wheels-footer">7 × 7 + 1 — AT EVERY SCALE<span>Nothing random. Nothing missing.</span></div>
+    </div>
+  </section>
+
   <section>
     <h2>The Work</h2>
     <p>A documentary series in the evidence-mystery style: the dreams, the
@@ -230,5 +279,78 @@
     <p>Scriptures quoted from the New World Translation.</p>
   </div>
 </main>
+
+<script>
+const WHEELS = [
+  { name:"THE WEEK", count:"7 days", sub:"the 7th day — Sabbath", ref:"Genesis 2:2-3", r:58, spokes:7, rev:14,
+    note:"Six days you labor; the seventh belongs to Jehovah. Set at creation — before nations, before religion, before any calendar of men." },
+  { name:"THE YEAR", count:"12 months", sub:"the appointed times", ref:"Leviticus 23", r:78, spokes:12, rev:19,
+    note:"Seedtime and harvest, summer and winter — the appointed times returning in their seasons, year after year, without fail." },
+  { name:"PENTECOST", count:"7 × 7 days + 1 = 50 days", sub:"the fiftieth day", ref:"Leviticus 23:15-16", r:98, spokes:50, rev:24,
+    note:"Count seven weeks of days — seven sevens — and then one day more. Fifty. The same pattern, larger." },
+  { name:"JUBILEE", count:"7 × 7 years + 1 = 50 years", sub:"release — the land rests", ref:"Leviticus 25:8-10", r:118, spokes:50, rev:29,
+    note:"Count seven weeks of years — seven Sabbath years — and then one year more. Fifty. Debts released. Slaves set free. The land rests." },
+  { name:"THE 120-YEAR DAY", count:"49 × 120 = 5,880 → 6,000 → 7,000", sub:"the great wheel", ref:"Genesis 6:3", r:142, spokes:49, rev:35,
+    note:"'His days shall be 120 years.' Forty-nine of those days: 5,880. Then the Jubilee of God: 6,000. Then the thousand-year reign of Christ: 7,000." }
+];
+
+const svg = document.getElementById('wheels');
+const NS = 'http://www.w3.org/2000/svg';
+let x = 20;
+
+WHEELS.forEach((w, i) => {
+  const cx = x + w.r, cy = 200;
+  const g = document.createElementNS(NS, 'g');
+  g.setAttribute('class', 'wheel');
+  
+  const spin = document.createElementNS(NS, 'g');
+  spin.setAttribute('class', 'spin');
+  spin.style.animationDuration = w.rev + 's';
+  if (i % 2) spin.style.animationDirection = 'reverse';
+  
+  const rim = document.createElementNS(NS, 'circle');
+  rim.setAttribute('cx', cx); rim.setAttribute('cy', cy); rim.setAttribute('r', w.r);
+  rim.setAttribute('class', 'rim'); spin.appendChild(rim);
+  
+  const rim2 = document.createElementNS(NS, 'circle');
+  rim2.setAttribute('cx', cx); rim2.setAttribute('cy', cy); rim2.setAttribute('r', w.r - 10);
+  rim2.setAttribute('class', 'rim2'); spin.appendChild(rim2);
+  
+  for (let s = 0; s < w.spokes; s++) {
+    const a = (s / w.spokes) * Math.PI * 2;
+    const l = document.createElementNS(NS, 'line');
+    l.setAttribute('x1', cx); l.setAttribute('y1', cy);
+    l.setAttribute('x2', cx + Math.cos(a) * (w.r - 12));
+    l.setAttribute('y2', cy + Math.sin(a) * (w.r - 12));
+    l.setAttribute('class', 'spoke'); spin.appendChild(l);
+  }
+  
+  const hub = document.createElementNS(NS, 'circle');
+  hub.setAttribute('cx', cx); hub.setAttribute('cy', cy); hub.setAttribute('r', 9);
+  hub.setAttribute('class', 'hub'); spin.appendChild(hub);
+  g.appendChild(spin);
+  
+  const t1 = document.createElementNS(NS, 'text');
+  t1.setAttribute('x', cx); t1.setAttribute('y', cy + w.r + 30);
+  t1.setAttribute('class', 'wlabel'); t1.textContent = w.name; g.appendChild(t1);
+  
+  const t2 = document.createElementNS(NS, 'text');
+  t2.setAttribute('x', cx); t2.setAttribute('y', cy + w.r + 52);
+  t2.setAttribute('class', 'wcount'); t2.textContent = w.count; g.appendChild(t2);
+  
+  const t3 = document.createElementNS(NS, 'text');
+  t3.setAttribute('x', cx); t3.setAttribute('y', cy + w.r + 72);
+  t3.setAttribute('class', 'wcount'); t3.textContent = w.sub; g.appendChild(t3);
+  
+  g.addEventListener('click', () => {
+    document.getElementById('detail').innerHTML =
+      '<h2>' + w.name + ' — ' + w.count + '</h2>' +
+      '<div class="ref">' + w.ref + '</div><p>' + w.note + '</p>';
+  });
+  
+  svg.appendChild(g);
+  x = cx + w.r - 14; // mesh: slight overlap so rims touch
+});
+</script>
 </body>
 </html>
