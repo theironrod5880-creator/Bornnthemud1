@@ -1,0 +1,9 @@
+app/
+├── build.gradle
+└── src/
+    └── main/
+        ├── AndroidManifest.xml
+        ├── assets/
+        │   └── web/ (put your index.html here)
+        └── java/
+            └── com/concepts5880/portal/ (MainActivity.java & WebServerService.java)
