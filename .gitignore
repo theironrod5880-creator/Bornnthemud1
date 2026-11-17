@@ -1,17 +1,5 @@
-# THE PRIVATE GATE
-/private/
-*vault/private*
-*private_dates*
-*private_math*
-
-# LARGE MEDIA FILES
-*.mp3
-*.wav
-*.mp4
-*.mov
-*.m4a
-
-# OPERATING SYSTEM FILES
-.DS_Store
-Thumbs.db
-desktop.ini
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
